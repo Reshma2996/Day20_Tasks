@@ -5,8 +5,9 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function fetchWeather() {
-const apiKey = 'bda97eca921e2b8df6d264a482081839';
-    fetch(`https://api.weatherstack.com/current?access_key=${apiKey}&query=India`)
+// const apiKey = 'bda97eca921e2b8df6d264a482081839';
+    //fetch(`https://api.weatherstack.com/current?access_key=${apiKey}&query=India`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=London,uk&apiKey=a1b32df349417336d7e005dbb07f60c0`)
 
         .then(response => response.json())
         .then(data => {
